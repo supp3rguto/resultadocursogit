@@ -1,0 +1,44 @@
+Nome: AUGUSTO ORTIGOSO BARBOSA (32221BSI028)
+
+Questionário
+
+1. Explique as diferenças entre git e github.
+
+2. a) Suponha que um aluno acaba de criar um projeto em seu computador, ele usou git e enviou para um repositório remoto no github.
+Qual a ordem correta desses comandos que ele utilizou?
+git remote add origin
+git add
+git init
+git push
+git commit
+
+b) Cite a funcionalidade de cada um desses comandos.
+
+3. Explique as principais diferenças entre repositório remoto e local. E, qual é o comando para enviar alterações do repositório local para o repositório remoto?
+
+4. Porque e como utilizar branchs em um projeto?
+
+5. Com suas palavras diga o que é um merge no git e quando deve ser usado.
+
+**RESPOSTAS**
+
+1) O Git é um software livre e utilizado no desenvolvimento de software onde diversas pessoas estão contribuindo simultaneamente, podendo criar e editar arquivo, e sempre quando alguém disponibiliza sua parte do projeto no Git, ele gerencia as alterações feitas e guarda um histórico. Já o GitHub é uma plataforma onde você pode armazenar seus projetos, como se fosse uma rede social, só que de códigos, onde seus desenvolvedores podem disponibilizá-los para outras pessoas verem.
+
+2 - a) git init
+git add
+git commit
+git remote add origin
+git push
+
+b) git init - Inicializa um repositório Git localmente no diretório do projeto.
+git add - Acrescenta alterações feitas nos arquivos do projeto.
+git commit - Cria um novo commit (tipo um snapshot) no histórico do repositório do projeto.
+git remote add origin - Adiciona um repositório remoto ao repositório local.
+git push - Envia alterações feitas no repositório local do projeto para um repositório remoto.
+
+3) O repositório local é uma cópia do repositório remoto que você possui em seu sistema, enquanto um repositório remoto é uma versão centralizada do repositório Git que permite a colaboração entre desenvolvedores. Enquanto o repositório local permite que você trabalhe offline e faça alterações locais, fazer commits no histórico do repositório local sem afetar o repositório remoto, e mesclar branches, o repositório remoto é usado para compartilhar e sincronizar as alterações com outros colaboradores.
+O comando git.push permite que outros desenvolvedores vejam e acessem suas alterações.
+
+4) Uma branch é uma bifurcação do estado do código que cria um novo caminho para a evolução do mesmo. Usando branches é possível desenvolver novos recursos para nossa aplicação sem impedir o desenvolvimento no branch principal, e também criar diferentes branches de desenvolvimento que podem convergir no mesmo repositório. Por exemplo, um branch estável, um branch teste e um branch instável.
+
+5) git.merge é um comando que junta algum histórico já bifurcado, permitindo que capture linhas criadas a partir de branches e as integrem em uma ramificação principal. Ele deverá ser usado quando o usuário precisar fazer alterações alterações entre branches.
